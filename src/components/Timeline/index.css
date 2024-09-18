@@ -1,0 +1,190 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-right: auto;
+  background-image: linear-gradient(to left,  #4c6c6c,#51816e);
+  /*background-color: #222127a4; /* set background color to black */
+  border: 0px solid transparent; /* set border width to 50px and transparent color */
+
+  transition: border-image 0.5s; /* add transition effect for border color */
+  border-radius: 0px;
+  border-bottom: none;
+  border-top: none;
+ 
+}
+
+
+
+
+
+.cont{
+  display: flex;
+  flex-direction: column;
+  margin:5px ;
+}
+
+
+img {
+  width:20vw; /* adjust the width to your liking */
+  height:40vh;
+  float: left;
+  margin-top: 100px;
+  border-radius: 20px;
+  align-self: self-end;
+  text-shadow: 4px 4px 8px rgba(243, 241, 242, 0.8), 0px 0px 20px rgba(228, 227, 220, 0.995);
+
+}
+
+
+
+
+.chrono{
+  background-color: aliceblue;
+  border: 30px solid transparent; /* set border width to 50px and transparent color */
+  border-image: linear-gradient(to right, #afa49b, #9bb3c5, #8d996a) 1; /* set linear gradient border color */
+  transition: border-image 0.5s; /* add transition effect for border color */
+  border-radius: 20px;
+}
+
+.chrono:hover {
+  background-color:#c2bae6a4 ;
+}
+  
+   h1 {
+    color: #d9e1e8; /* blue color for the name */
+    animation: animateName 2s forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes animateName {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .im{
+    margin-top: 0px;
+    
+    height:50vh;
+    width:30vw;
+  
+  }
+
+  /* Original code remains the same */
+
+/* Add media queries for responsiveness */
+
+/* For screens with a maximum width of 1200px (large desktops) */
+@media only screen and (max-width: 1200px) {
+  .app {
+    height: 90vh;
+    margin-top:150px;
+    background-image: linear-gradient(to left,  #4c6c6c,#51816e);
+  }
+  .cont {
+    margin: 10px;
+  }
+  img {
+    width: 15vw;
+    height: 30vh;
+    margin-top: 50px;
+  }
+  .chrono {
+    border: 20px solid transparent;
+    border-radius: 15px;
+    height:auto;
+    width:auto
+  }
+  .im {
+    height: 40vh;
+    width: 25vw;
+  }
+}
+
+/* For screens with a maximum width of 992px (medium desktops) */
+@media only screen and (max-width: 992px) {
+  .app {
+    height: 80vh;
+    flex-direction: column;
+    background-image: linear-gradient(to left,  #4c6c6c,#51816e);
+    margin-top: 150px; /* change flex direction to column for tablet devices */
+  }
+  .cont {
+    margin: 8px;
+  }
+  img {
+    width: 12vw;
+    height: 25vh;
+    margin-top: 30px;
+  }
+  .chrono {
+    border: 15px solid transparent;
+    border-radius: 10px;
+    height:auto;
+    width:auto;
+  }
+  .im {
+    height: 35vh;
+    width: 20vw;
+  }
+}
+
+/* For screens with a maximum width of 768px (tablets and smaller) */
+@media only screen and (max-width: 768px) {
+  .app {
+
+    height: 70vh;
+    flex-direction: column;
+    background-image: linear-gradient(to left,  #4c6c6c,#51816e);
+    margin-top:100px /* change flex direction to column for tablet devices */
+  }
+  .cont {
+    margin: 5px;
+  }
+  img {
+    width: 10vw;
+    height: 20vh;
+    margin-top: 20px;
+  }
+  .chrono {
+    border: 10px solid transparent;
+    border-radius: 8px;
+  }
+  .im {
+    height: 30vh;
+    width: 18vw;
+  }
+}
+
+/* For screens with a maximum width of 480px (mobile devices) */
+@media only screen and (max-width: 480px) {
+  .app {
+    height: 60vh;
+    flex-direction: column; /* change flex direction to column for mobile devices */
+  }
+  .cont {
+    margin: 3px;
+  }
+  img {
+    width: 8vw;
+    height: 15vh;
+    margin-top: 15px;
+  }
+  .chrono {
+    border: 8px solid transparent;
+    border-radius: 6px;
+    height:auto;
+    width:auto;
+  }
+  .im {
+    height: 25vh;
+    width: 15vw;
+  }
+}

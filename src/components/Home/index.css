@@ -1,0 +1,213 @@
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* changed from flex-start to center */
+  
+ 
+  background-image: linear-gradient(to left,  #4c6c6c,#51816e);
+
+
+ 
+}
+.img2 {
+  margin-top: 70px;
+   /* apply a blur effect to the background image */
+  position: relative;
+  opacity:1; /* set the opacity of the entire container to 50% */
+  z-index: 1; /* set the z-index to 1, so the image is behind the text */
+align-self: center;
+}
+.imm{
+  margin-top: 0px;
+ justify-items: flex-start;
+  height:100vh;
+ width:55vw
+
+}
+.home2{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin-right: 50px;
+ 
+  
+}
+
+
+h1  {
+    font-size: 30px;
+    font-weight:500;
+   color:  #e6ecef; /* blue color for the name */
+    animation: animateName 2s forwards;
+    animation-delay: 1s;
+    opacity: 1;
+    text-shadow: 0 0 10px rgb(199, 226, 61);
+    margin:25px;
+  }
+  
+  @keyframes animateName {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  p {
+    color:  #0a88d1; /* blue color for the name */
+font-size:25px;
+    font-weight: 500;
+  
+    animation: animateRole 2s forwards;
+    animation-delay: 1.5s;
+    opacity: 1;
+    text-shadow: 0 0 10px rgb(212, 226, 53);
+  }
+  
+  @keyframes animateRole {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+
+.image{
+align-content: center;
+border-radius: 50px;
+}
+
+
+.bord{
+  border-radius:10px ;
+}
+
+.style{
+  height:80px;
+  width:80px;
+ align-self: center;
+  margin-top:10px;
+  align-content: center;
+  margin-left: 250px;
+
+  
+}
+
+.home3{
+  display: flex;
+  justify-content: center;
+  margin:5px;
+}
+
+button {
+  background-color: white;
+  align-self: center;
+  color: #0eafea;
+  text-shadow: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+button:hover {
+  background-color: #0520bb;
+}
+
+.aboutcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.link{
+   height:15px;
+   width:20px;
+   margin: 5px;
+   padding:10px;
+}
+
+
+.modal{
+  margin-top: 100px;
+}
+
+/* Original code remains the same */
+
+/* Add media queries for responsiveness */
+
+/* For screens with a maximum width of 1200px (large desktops) */
+@media only screen and (max-width: 1200px) {
+  h1 {
+    color: #e6ecef; /* blue color for the name */
+  }
+  p {
+    color: #0a88d1; /* blue color for the name */
+  }
+  .image {
+    border-radius: 50px;
+    margin: 20px;
+  }
+}
+
+/* For screens with a maximum width of 992px (medium desktops) */
+@media only screen and (max-width: 992px) {
+  h1 {
+    color: #3498db; /* green color for the name */
+  }
+  p {
+    color: #2ecc71; /* green color for the role */
+  }
+  .image {
+    border-radius: 30px;
+    margin: 15px;
+  }
+}
+
+/* For screens with a maximum width of 768px (tablets and smaller) */
+@media only screen and (max-width: 768px) {
+  h1 {
+    color: #9b59b6; /* purple color for the name */
+  }
+  p {
+    color: #8e44ad; /* purple color for the role */
+  }
+  .image {
+    border-radius: 20px;
+    margin: 10px;
+  }
+  .style {
+    margin-left: 150px;
+  }
+}
+
+/* For screens with a maximum width of 480px (mobile devices) */
+@media only screen and (max-width: 480px) {
+  h1 {
+    color: #f1c40f; /* orange color for the name */
+  }
+  p {
+    color: #e67e73; /* orange color for the role */
+  }
+  .image {
+    border-radius: 15px;
+    margin: 5px;
+  }
+  .style {
+    margin-left: 50px;
+  }
+}
